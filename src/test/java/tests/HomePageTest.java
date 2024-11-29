@@ -1,31 +1,26 @@
 package tests;
 
 import com.herokuapp.pages.HomePage;
-import org.junit.Test;
 import org.openqa.selenium.WebElement;
-import static org.junit.Assert.assertTrue;
+import org.testng.annotations.Test;
+import static org.testng.Assert.assertTrue;
 
 import java.util.List;
 
 public class HomePageTest extends TestBase {
 
     @Test
-    public void testHomePageLinks() {
-
-        driver.get("https://the-internet.herokuapp.com/");
+    public void testHomePageHasLinks() {
         HomePage homePage = new HomePage(driver);
 
         List<WebElement> links = homePage.getAllLinks();
+        assertTrue(links.size() > 0, "На главной странице нет ссылок");
+    }
 
-        assertTrue("На главной странице нет ссылок", links.size() > 0);
+    @Test
+    public void testSpecificLinkIsPresent() {
+        HomePage homePage = new HomePage(driver);
 
-        assertTrue("Ссылка 'Add/Remove Elements' не найдена на главной странице", homePage.isLinkPresent("Add/Remove Elements"));
-
-        for (WebElement link : links) {
-            String linkText = link.getText().trim(); // Удаление пробелов
-            if (!linkText.isEmpty()) { // Проверка только тех ссылок, которые имеют текст
-                assertTrue("Ссылка не содержит текста", linkText != null && !linkText.isEmpty());
-            }
-        }
+        assertTrue(homePage.isLinkPresent("Add/Remove Elements"), "Ссылка 'Add/Remove Elements' не найдена на главной странице");
     }
 }

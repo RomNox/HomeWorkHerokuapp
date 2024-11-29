@@ -10,6 +10,9 @@ public class HomePage extends BasePage {
     // Локатор для всех ссылок на главной странице
     private By allLinks = By.tagName("a");
 
+    // Локатор для конкретной ссылки по тексту
+    private By addRemoveLink = By.linkText("Add/Remove Elements");
+
     // Конструктор, который инициализирует страницу с использованием экземпляра WebDriver
     public HomePage(WebDriver driver) {
         super(driver);
@@ -22,6 +25,11 @@ public class HomePage extends BasePage {
 
     // Метод для проверки наличия конкретной ссылки по тексту
     public boolean isLinkPresent(String linkText) {
-        return driver.findElements(By.linkText(linkText)).size() > 0;
+        return isElementPresent(By.linkText(linkText));
+    }
+
+    // Метод для клика на ссылку "Add/Remove Elements"
+    public void clickAddRemoveElements() {
+        click(addRemoveLink);
     }
 }
