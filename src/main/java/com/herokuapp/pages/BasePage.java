@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class BasePage {
     protected WebDriver driver;
 
@@ -35,4 +37,11 @@ public class BasePage {
     public boolean isElementPresent(By locator) {
         return driver.findElements(locator).size() > 0;
     }
+
+    // Метод для клика по ссылке на странице, используя её текст
+    public void clickLinkByText(String linkText) {
+        By linkLocator = By.linkText(linkText);
+        click(linkLocator);
+    }
+
 }

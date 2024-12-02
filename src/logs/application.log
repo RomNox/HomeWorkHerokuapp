@@ -1,0 +1,128 @@
+2024-12-02 23:55:43 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-02 23:55:43 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-02 23:55:48 [main] INFO  tests.MultipleWindowsTest - Переход на страницу 'Multiple Windows'
+2024-12-02 23:55:48 [main] INFO  tests.MultipleWindowsTest - Начинаем тест на открытие нового окна
+2024-12-02 23:55:48 [main] DEBUG tests.MultipleWindowsTest - Клик по ссылке 'Click Here'
+2024-12-02 23:55:48 [main] INFO  tests.MultipleWindowsTest - Переключаемся на новое окно
+2024-12-02 23:55:48 [main] INFO  tests.MultipleWindowsTest - Проверяем наличие текста 'New Window' на новой странице
+2024-12-02 23:55:48 [main] INFO  tests.MultipleWindowsTest - Тест на открытие нового окна успешно завершён
+2024-12-02 23:58:53 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-02 23:58:53 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-02 23:58:58 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-02 23:58:58 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-02 23:58:58 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 1' в раскрывающемся списке
+2024-12-02 23:58:58 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 1' был правильно выбран
+2024-12-02 23:58:58 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-02 23:59:52 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-02 23:59:52 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:00:05 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:00:06 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:00:09 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:00:10 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:00:10 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 2' в раскрывающемся списке
+2024-12-03 00:00:10 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 2' был правильно выбран
+2024-12-03 00:00:21 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:00:21 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:00:25 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:00:26 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:00:26 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 1' в раскрывающемся списке
+2024-12-03 00:00:26 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 1' был правильно выбран
+2024-12-03 00:00:26 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:01:46 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:01:46 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:01:51 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:01:51 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:01:51 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 1' в раскрывающемся списке
+2024-12-03 00:01:51 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 1' был правильно выбран
+2024-12-03 00:01:51 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:11:53 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:11:54 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:11:58 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:11:59 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:11:59 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 1' в раскрывающемся списке
+2024-12-03 00:11:59 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 1' был правильно выбран
+2024-12-03 00:11:59 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:16:15 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:16:15 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:16:20 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:16:20 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:16:20 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 1' в раскрывающемся списке
+2024-12-03 00:16:20 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 1' был правильно выбран
+2024-12-03 00:16:20 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:17:51 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:17:51 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:17:54 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:17:56 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:17:56 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 1' в раскрывающемся списке
+2024-12-03 00:17:56 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 1' был правильно выбран
+2024-12-03 00:17:56 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:19:43 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:19:43 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:19:47 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:19:47 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:19:47 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 1' в раскрывающемся списке
+2024-12-03 00:19:47 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 1' был правильно выбран
+2024-12-03 00:19:48 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:20:29 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:20:29 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:20:34 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:20:34 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:20:34 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 1' в раскрывающемся списке
+2024-12-03 00:20:34 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 1' был правильно выбран
+2024-12-03 00:20:34 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:26:09 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:26:09 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:26:13 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:26:14 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:26:14 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 1' в раскрывающемся списке
+2024-12-03 00:26:14 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 1' был правильно выбран
+2024-12-03 00:26:14 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:26:28 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:26:29 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:26:32 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:26:33 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:26:33 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 2' в раскрывающемся списке
+2024-12-03 00:26:33 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 2' был правильно выбран
+2024-12-03 00:27:15 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:27:15 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:27:19 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:27:20 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:27:20 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 1' в раскрывающемся списке
+2024-12-03 00:27:20 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 1' был правильно выбран
+2024-12-03 00:27:20 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:27:29 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-03 00:27:29 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-03 00:27:33 [main] INFO  tests.DropdownTest - Переход на страницу 'Dropdown' через HomePage
+2024-12-03 00:27:33 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
+2024-12-03 00:27:33 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 2' в раскрывающемся списке
+2024-12-03 00:27:33 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 2' был правильно выбран
