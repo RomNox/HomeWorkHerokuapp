@@ -1,4 +1,4 @@
 package com.herokuapp.pages;
 
-public class HomePage {
+public class HoversPage {
 }
