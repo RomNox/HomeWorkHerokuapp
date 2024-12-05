@@ -1,30 +1,25 @@
 package com.herokuapp.pages;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-
-import java.util.Set;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class MultipleWindowsPage extends BasePage {
+
+    @FindBy(linkText = "Click Here")
+    private WebElement clickHereLink;
+
     public MultipleWindowsPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
     }
 
-public void clickHere () {
-        clickLinkByText("Click here");
-}
+    public void clickClickHereLink() {
+        clickHereLink.click();
+    }
 
-public void switchToNewWindow() {
-        String mainWindowHandle = driver.getWindowHandle();
-        Set<String> allWindows = driver.getWindowHandles();
-
-    for (String handle : allWindows) {
-        if (!handle.equals(mainWindowHandle)) { // Ищем дескриптор, который не равен основному окну
-            driver.switchTo().window(handle); // Переключаемся на новое окно
+    public void switchToNewWindow() {
+        for (String windowHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(windowHandle);
         }
     }
-}
-
-
 }

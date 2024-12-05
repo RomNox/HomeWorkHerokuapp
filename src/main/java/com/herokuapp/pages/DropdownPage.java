@@ -13,17 +13,14 @@ public class DropdownPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    // Локатор для раскрывающегося списка
     private By dropdown = By.id("dropdown");
 
-    // Метод для выбора значения из раскрывающегося списка по видимому тексту
     public void selectOptionByVisibleText(String option) {
         WebElement dropdownElement = driver.findElement(dropdown);
         Select select = new Select(dropdownElement);
         select.selectByVisibleText(option);
     }
 
-    // Метод для получения текущего выбранного значения
     public String getSelectedOption() {
         WebElement dropdownElement = driver.findElement(dropdown);
         Select select = new Select(dropdownElement);

@@ -8,11 +8,11 @@ import org.testng.annotations.Test;
 
 public class AddRemoveElementsTest extends TestBase{
 
-     @BeforeMethod
-             public void preconditions(){
-         HomePage homePage = new HomePage(driver);
-         homePage.clickLink("Add/Remove Elements");
-     }
+    @BeforeMethod
+    public void preconditions(){
+        HomePage homePage = new HomePage(driver);
+        homePage.clickLink("Add/Remove Elements");
+    }
 
     @Test
     public void testAddElement() {
@@ -52,5 +52,4 @@ public class AddRemoveElementsTest extends TestBase{
         Assert.assertEquals(deleteButtonCountAfterDeletion, 1, "Количество кнопок 'Delete' должно быть 1 после удаления");
     }
 }
-
 

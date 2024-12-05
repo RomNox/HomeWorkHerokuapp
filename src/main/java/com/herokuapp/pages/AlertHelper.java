@@ -10,7 +10,6 @@ public class AlertHelper extends BasePage{
         super(driver);
     }
 
-    // Метод для принятия Alert
     public String acceptAlert() {
         Alert alert = driver.switchTo().alert();
         String alertText = alert.getText();
@@ -18,7 +17,6 @@ public class AlertHelper extends BasePage{
         return alertText;
     }
 
-    // Метод для отмены Alert
     public String dismissAlert() {
         Alert alert = driver.switchTo().alert();
         String alertText = alert.getText();
@@ -26,7 +24,6 @@ public class AlertHelper extends BasePage{
         return alertText;
     }
 
-    // Метод для отправки текста в Alert и принятия
     public String sendTextToAlertAndAccept(String text) {
         Alert alert = driver.switchTo().alert();
         alert.sendKeys(text);

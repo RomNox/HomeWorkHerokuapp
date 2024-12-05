@@ -15,33 +15,31 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    // Метод для клика по элементу
     public void click(By locator) {
         WebElement element = driver.findElement(locator);
         element.click();
     }
 
-    // Метод для ввода текста в элемент
     public void type(By locator, String text) {
         WebElement element = driver.findElement(locator);
-        element.clear(); // Очистка поля перед вводом
+        element.clear();
         element.sendKeys(text);
     }
 
-    // Метод для получения текста элемента
     public String getText(By locator) {
         return driver.findElement(locator).getText();
     }
 
-    // Метод для проверки наличия элемента на странице
     public boolean isElementPresent(By locator) {
         return driver.findElements(locator).size() > 0;
     }
 
-    // Метод для клика по ссылке на странице, используя её текст
     public void clickLinkByText(String linkText) {
         By linkLocator = By.linkText(linkText);
         click(linkLocator);
     }
 
+    public void navigateTo(String url) {
+        driver.get(url);
+    }
 }

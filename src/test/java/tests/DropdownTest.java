@@ -2,13 +2,10 @@ package tests;
 
 import com.herokuapp.pages.DropdownPage;
 import com.herokuapp.pages.HomePage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -25,7 +22,7 @@ public class DropdownTest extends TestBase {
         HomePage homePage = new HomePage(driver);
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Dropdown")));
+        wait.until(webDriver -> homePage.isLinkPresent("Dropdown"));
 
         homePage.clickLinkByText("Dropdown");
         dropdownPage = new DropdownPage(driver);
@@ -59,13 +56,5 @@ public class DropdownTest extends TestBase {
         Assert.assertEquals(selectedOption, "Option 2", "Неправильно выбран элемент в раскрывающемся списке");
 
         logger.info("Тест завершен успешно: 'Option 2' был правильно выбран");
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-            driver = null;
-        }
     }
 }

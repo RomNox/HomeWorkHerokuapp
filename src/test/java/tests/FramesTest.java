@@ -29,21 +29,21 @@ public class FramesTest extends TestBase {
 
         FrameHelper frameHelper = new FrameHelper(driver);
 
-        // Переход в верхний фрейм (top) и затем в левый фрейм (left)
+
         frameHelper.switchToFrame("frame-top");
         frameHelper.switchToFrame("frame-left");
 
         String leftText = driver.findElement(By.tagName("body")).getText();
         Assert.assertTrue(leftText.contains("LEFT"), "Текст в левом фрейме не совпадает");
 
-        // Возврат в родительский фрейм и затем переход в центральный фрейм (middle)
+
         frameHelper.switchToParentFrame();
         frameHelper.switchToFrame("frame-middle");
 
         String middleText = driver.findElement(By.id("content")).getText();
         Assert.assertTrue(middleText.contains("MIDDLE"), "Текст в центральном фрейме не совпадает");
 
-        // Возврат в родительский фрейм и затем переход в правый фрейм (right)
+
         frameHelper.switchToParentFrame();
         frameHelper.switchToFrame("frame-right");
 
