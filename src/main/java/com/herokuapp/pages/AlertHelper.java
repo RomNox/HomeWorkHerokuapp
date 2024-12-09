@@ -3,11 +3,11 @@ package com.herokuapp.pages;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 
-public class AlertHelper extends BasePage{
-    private WebDriver driver;
+public class AlertHelper {
+    private final WebDriver driver;
 
     public AlertHelper(WebDriver driver) {
-        super(driver);
+        this.driver = driver;
     }
 
     public String acceptAlert() {
@@ -24,11 +24,9 @@ public class AlertHelper extends BasePage{
         return alertText;
     }
 
-    public String sendTextToAlertAndAccept(String text) {
+    public void sendTextToAlertAndAccept(String text) {
         Alert alert = driver.switchTo().alert();
         alert.sendKeys(text);
-        String alertText = alert.getText();
         alert.accept();
-        return alertText;
     }
 }

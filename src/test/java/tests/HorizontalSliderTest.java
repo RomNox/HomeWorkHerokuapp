@@ -10,7 +10,7 @@ public class HorizontalSliderTest extends TestBase {
 
     @BeforeMethod
     public void precondition() {
-        sliderPage = new HorizontalSliderPage(driver);
+        sliderPage = new HorizontalSliderPage(app.getDriver()); // Получаем драйвер через ApplicationManager
         sliderPage.navigateTo("https://the-internet.herokuapp.com/horizontal_slider");
     }
 

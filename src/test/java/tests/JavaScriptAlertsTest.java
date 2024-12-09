@@ -9,11 +9,11 @@ public class JavaScriptAlertsTest extends TestBase {
 
     @Test
     public void testJsAlert() {
-        driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+        app.getDriver().get("https://the-internet.herokuapp.com/javascript_alerts");
 
-        driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();
+        app.getDriver().findElement(By.xpath("//button[text()='Click for JS Alert']")).click();
 
-        AlertHelper alertHelper = new AlertHelper(driver);
+        AlertHelper alertHelper = new AlertHelper(app.getDriver());
         String alertText = alertHelper.acceptAlert();
 
         Assert.assertEquals(alertText, "I am a JS Alert", "Текст JS Alert не совпадает");
@@ -21,11 +21,11 @@ public class JavaScriptAlertsTest extends TestBase {
 
     @Test
     public void testJsConfirm() {
-        driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+        app.getDriver().get("https://the-internet.herokuapp.com/javascript_alerts");
 
-        driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
+        app.getDriver().findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
 
-        AlertHelper alertHelper = new AlertHelper(driver);
+        AlertHelper alertHelper = new AlertHelper(app.getDriver());
         String alertText = alertHelper.dismissAlert();
 
         Assert.assertEquals(alertText, "I am a JS Confirm", "Текст JS Confirm не совпадает");
@@ -33,14 +33,14 @@ public class JavaScriptAlertsTest extends TestBase {
 
     @Test
     public void testJsPrompt() {
-        driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+        app.getDriver().get("https://the-internet.herokuapp.com/javascript_alerts");
 
-        driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
+        app.getDriver().findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
 
-        AlertHelper alertHelper = new AlertHelper(driver);
+        AlertHelper alertHelper = new AlertHelper(app.getDriver());
         alertHelper.sendTextToAlertAndAccept("Test Prompt");
 
-        String resultText = driver.findElement(By.id("result")).getText();
+        String resultText = app.getDriver().findElement(By.id("result")).getText();
         Assert.assertTrue(resultText.contains("Test Prompt"), "Результат не содержит введённый текст");
     }
 }

@@ -11,8 +11,7 @@ public class HoversTest extends TestBase {
 
     @BeforeMethod
     public void setUpPage() {
-        super.setUp();
-        hoversPage = new HoversPage(driver);
+        hoversPage = new HoversPage(app.getDriver());
         hoversPage.openPage();
     }
 

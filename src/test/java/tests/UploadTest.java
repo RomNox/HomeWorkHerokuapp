@@ -12,17 +12,18 @@ public class UploadTest extends TestBase {
 
     @BeforeMethod
     public void setUpPage() {
-        uploadPage = new UploadPage(driver);
+        uploadPage = new UploadPage(app.getDriver());
         uploadPage.navigateToUploadPage();
     }
 
     @Test
     public void testFileUpload() {
-        String filePath = System.getProperty("user.dir") + "/src/test/java/resources/sample.txt";
+        String filePath = System.getProperty("user.dir") + "/src/test/resources/sample.txt";
 
         uploadPage.uploadFile(filePath);
 
         String uploadedFileName = uploadPage.getUploadedFileName();
+
         assertEquals(uploadedFileName, "sample.txt", "Файл был загружен некорректно");
     }
 }

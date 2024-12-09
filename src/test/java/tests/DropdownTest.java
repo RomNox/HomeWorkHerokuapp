@@ -18,14 +18,14 @@ public class DropdownTest extends TestBase {
     @BeforeMethod
     public void preCondition() {
         logger.info("Переход на страницу 'Dropdown' через HomePage");
+        HomePage homePage = new HomePage(app.getDriver());
 
-        HomePage homePage = new HomePage(driver);
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(app.getDriver(), Duration.ofSeconds(10));
         wait.until(webDriver -> homePage.isLinkPresent("Dropdown"));
 
         homePage.clickLinkByText("Dropdown");
-        dropdownPage = new DropdownPage(driver);
+
+        dropdownPage = new DropdownPage(app.getDriver());
 
         logger.info("Страница 'Dropdown' успешно открыта и инициализирована");
     }
@@ -34,10 +34,8 @@ public class DropdownTest extends TestBase {
     public void testSelectOption1() {
         logger.info("Начинаем тест: выбор 'Option 1' в раскрывающемся списке");
 
-        // Выбираем значение "Option 1" в раскрывающемся списке
         dropdownPage.selectOptionByVisibleText("Option 1");
 
-        // Проверяем, что "Option 1" действительно выбрано
         String selectedOption = dropdownPage.getSelectedOption();
         Assert.assertEquals(selectedOption, "Option 1", "Неправильно выбран элемент в раскрывающемся списке");
 
@@ -48,10 +46,8 @@ public class DropdownTest extends TestBase {
     public void testSelectOption2() {
         logger.info("Начинаем тест: выбор 'Option 2' в раскрывающемся списке");
 
-        // Выбираем значение "Option 2" в раскрывающемся списке
         dropdownPage.selectOptionByVisibleText("Option 2");
 
-        // Проверяем, что "Option 2" действительно выбрано
         String selectedOption = dropdownPage.getSelectedOption();
         Assert.assertEquals(selectedOption, "Option 2", "Неправильно выбран элемент в раскрывающемся списке");
 

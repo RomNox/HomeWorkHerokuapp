@@ -9,13 +9,13 @@ public class BrokenImagesTest extends TestBase {
 
     @BeforeMethod
     public void navigateToBrokenImages() {
-        BasePage basePage = new BasePage(driver);
+        BasePage basePage = new BasePage(app.getDriver());
         basePage.clickLinkByText("Broken Images");
     }
 
     @Test
     public void testBrokenImages() {
-        BrokenImagesPage brokenImagesPage = new BrokenImagesPage(driver);
+        BrokenImagesPage brokenImagesPage = new BrokenImagesPage(app.getDriver());
         brokenImagesPage.checkBrokenImages();
     }
 }
