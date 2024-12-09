@@ -126,3 +126,15 @@
 2024-12-03 00:27:33 [main] INFO  tests.DropdownTest - Страница 'Dropdown' успешно открыта и инициализирована
 2024-12-03 00:27:33 [main] INFO  tests.DropdownTest - Начинаем тест: выбор 'Option 2' в раскрывающемся списке
 2024-12-03 00:27:33 [main] INFO  tests.DropdownTest - Тест завершен успешно: 'Option 2' был правильно выбран
+2024-12-09 17:32:53 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml"
+2024-12-09 17:32:53 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/vladimirromajkin/Library/Caches/JetBrains/IntelliJIdea2024.3/temp-testng-customsuite.xml
+
+2024-12-09 17:32:59 [main] INFO  com.herokuapp.pages.utils.MyListener - Attempting to locate element using: By.linkText: File Upload
+2024-12-09 17:32:59 [main] INFO  com.herokuapp.pages.utils.MyListener - Element located successfully: By.linkText: File Upload
+2024-12-09 17:33:00 [main] INFO  com.herokuapp.pages.utils.MyListener - Attempting to locate element using: By.id: file-upload
+2024-12-09 17:33:00 [main] INFO  com.herokuapp.pages.utils.MyListener - Element located successfully: By.id: file-upload
+2024-12-09 17:33:00 [main] INFO  com.herokuapp.pages.utils.MyListener - Attempting to locate element using: By.id: file-submit
+2024-12-09 17:33:00 [main] INFO  com.herokuapp.pages.utils.MyListener - Element located successfully: By.id: file-submit
+2024-12-09 17:33:00 [main] INFO  com.herokuapp.pages.utils.MyListener - Attempting to locate element using: By.id: uploaded-files
+2024-12-09 17:33:00 [main] INFO  com.herokuapp.pages.utils.MyListener - Element located successfully: By.id: uploaded-files
