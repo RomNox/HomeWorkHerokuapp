@@ -8,8 +8,8 @@
 
         <!-- Список классов -->
         <classes>
-            <class name="tests.FramesTest" />
-            <class name="tests.AnotherTestClass" />
+            <class name="tests.UploadTest" />
+            <class name="tests.HomePageTest" />
         </classes>
     </test>
 
